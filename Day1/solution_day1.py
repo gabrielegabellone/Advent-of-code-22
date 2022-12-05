@@ -1,10 +1,7 @@
 all_values = []
 all_counts = []
 with open("input.txt") as file:
-    while True:
-        line = file.readline()
-        if not line:
-            break
+    for line in file:
         all_values.append(line.strip())
 
 counter = 0
